@@ -1,0 +1,43 @@
+{
+    APPCLASS = colManager; 
+    FILESTABLE = {
+        CLASSES = (auxil.m, colManager.m, colonne.m, UserPath.m, XYPlot.m, XYPlotView.m); 
+        C_FILES = (); 
+        FRAMEWORKS = (AppKit.framework, Foundation.framework); 
+        H_FILES = (
+            colManager.h, 
+            colonne.h, 
+            defs.h, 
+            fonctionsC.h, 
+            UserPath.h, 
+            XYPlot.h, 
+            XYPlotView.h
+        ); 
+        IMAGES = (_tmodeleIco.ico); 
+        INTERFACES = (colonne.nib, modeleNcol.nib); 
+        M_FILES = (); 
+        OTHER_LIBS = (); 
+        OTHER_LINKED = (fonctionsC.c, IESmodel_main.m); 
+        OTHER_RESOURCES = (Picture1.tif, PPrime.tif); 
+        OTHER_SOURCES = (Makefile.preamble, Makefile, Makefile.postamble); 
+    }; 
+    GENERATEMAIN = YES; 
+    LANGUAGE = English; 
+    LOCALIZABLE_FILES = {colonne.nib = colonne.nib; modeleNcol.nib = modeleNcol.nib; }; 
+    MAKEFILEDIR = "$(NEXT_ROOT)/NextDeveloper/Makefiles/pb_makefiles"; 
+    NEXTSTEP_APPICON = modeleNcol.tiff; 
+    NEXTSTEP_DOCUMENTEXTENSIONS = (); 
+    NEXTSTEP_INSTALLDIR = "$(HOME)/Apps"; 
+    NEXTSTEP_MAINNIB = modeleNcol; 
+    PDO_UNIX_INSTALLDIR = "$(HOME)/Apps"; 
+    PDO_UNIX_MAINNIB = modeleNcol; 
+    PROJECTNAME = IESmodel; 
+    PROJECTTYPE = Application; 
+    PROJECTVERSION = 2.6; 
+    SYSTEMEXTENSIONS = (); 
+    WINDOWS_APPICON = _tmodeleIco.ico; 
+    WINDOWS_BUILDTOOL = $NEXT_ROOT/NextDeveloper/Executables/make; 
+    WINDOWS_DOCUMENTEXTENSIONS = (); 
+    WINDOWS_INSTALLDIR = "$(HOME)/Apps"; 
+    WINDOWS_MAINNIB = modeleNcol; 
+}
